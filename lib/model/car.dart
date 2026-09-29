@@ -1,19 +1,19 @@
-class Car{
-  int id;
-  String name;
-  String brand;
-  int tahun;
-  String price;
-  String description;
-  String image;
+class Car {
+  final int id;
+  final String name;
+  final String brand;
+  final int year;
+  final double price;
+  final String description;
+  final String imageUrl;
 
-  Car({
+  const Car({
     required this.id,
     required this.name,
-    required this.tahun,
-    required this. price,
-    required this. description,
-    required this. image,
+    required this.brand,
+    required this.year,
+    required this.price,
+    required this.description,
+    required this.imageUrl,
   });
 }
-

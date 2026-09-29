@@ -1,28 +1,26 @@
 import 'package:flutter/material.dart';
-import 'pages/login_page.dart';
+import 'package:kuis_124240197/pages/login_page.dart';
 
-void main() {
+void main() 
+{
   runApp(const MainApp());
 }
 
-class MainApp extends StatelessWidget {
+class MainApp extends StatelessWidget 
+{
   const MainApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+  Widget build(BuildContext context) 
+  {
+    return MaterialApp
+    (
+      title: 'Kuis 124240197',
       debugShowCheckedModeBanner: false,
-      title: 'Animal App',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFF6B9080),
-          primary: const Color(0xFF5E8B72),
-          surface: const Color(0xFFF6F9F6),
-          brightness: Brightness.light,
-        ),
-        scaffoldBackgroundColor: const Color(0xFFF6F9F6),
+      theme: ThemeData
+      (
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
-        fontFamily: 'Roboto',
       ),
       home: const LoginPage(),
     );
